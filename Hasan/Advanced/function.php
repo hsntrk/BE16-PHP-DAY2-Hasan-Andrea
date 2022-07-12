@@ -32,6 +32,10 @@ function setValue($celsius)
 if ($_POST) {
     if ($_POST['fahrenheit']) {
 
+        //formatted_dump($_POST);
+        echo var_dump($_POST);
+
+
         $c_val = ($_POST['fahrenheit'] - 32) * 5 / 9;
         $verb = setValue($c_val);
 
