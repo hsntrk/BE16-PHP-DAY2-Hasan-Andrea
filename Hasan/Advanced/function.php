@@ -14,7 +14,7 @@ function setValue($celsius)
             $verb = "freezing";
             break;
         case $celsius < 11:
-            $verb = "Cold";
+            $verb = "cold";
             break;
         case $celsius < 16:
             $verb = "pleasant";
@@ -39,13 +39,13 @@ if ($_POST) {
 
 ?>
 
-        <body>
-            <h1>Celsius</h1>
-            <div>
-                It is <?= $c_val ?> degrees and it is <?= $verb ?> <br>
-                <img src='./img/<?= $verb . ".jpg" ?>' alt='<?= $verb ?>'>
-            </div>
-        </body>
+<body>
+    <h1>Celsius</h1>
+    <div>
+        It is <?= $c_val ?> degrees and it is <?= $verb ?> <br>
+        <img src='./img/<?= $verb . ".jpg" ?>' alt='<?= $verb ?>'>
+    </div>
+</body>
 <?php
     }
 };
